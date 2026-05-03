@@ -1,5 +1,5 @@
 :root {--bg:#070a10;--surface:#0d1220;--border:rgba(100,180,255,.15);--accent:#00d4ff;--text:#e8f0ff;--muted:#6a7a99}
-*{box-sizing:border-box} body{margin:0;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box} body{margin:0;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);position:relative;isolation:isolate} body::before{content:'';position:fixed;inset:0;background:url('logo.png') center/55% no-repeat;opacity:.08;pointer-events:none;z-index:-1}
 nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(7,10,16,.9)}
 .logo{color:var(--accent);text-decoration:none;font-weight:700}.logo span{color:var(--text)} ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}a{color:var(--muted);text-decoration:none}
 .page{max-width:960px;margin:4rem auto;padding:0 1rem}.page h1{font-size:2.5rem;color:var(--accent)}.page p{line-height:1.7;color:var(--muted)}
