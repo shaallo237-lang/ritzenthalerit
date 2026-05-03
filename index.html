@@ -1031,20 +1031,22 @@
     <h2>SCHREIB UNS AN</h2>
     <p>Wir sind gern für dich da. Schildere uns dein Projekt – wir melden uns schnell und unkompliziert zurück.</p>
 
-    <form class="contact-form" action="mailto:it@leoritzenthaler.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://formsubmit.co/it@leoritzenthaler.com" method="POST">
+      <input type="hidden" name="_subject" value="Neue Anfrage über Ritzenthaler IT Website">
+      <input type="hidden" name="_captcha" value="false">
       <div class="form-row">
         <div class="form-field">
           <label>Name</label>
-          <input type="text" placeholder="Max Mustermann" required/>
+          <input type="text" name="name" placeholder="Max Mustermann" required/>
         </div>
         <div class="form-field">
           <label>E-Mail *</label>
-          <input type="email" placeholder="max@beispiel.de" required/>
+          <input type="email" name="email" placeholder="max@beispiel.de" required/>
         </div>
       </div>
       <div class="form-field">
         <label>Nachricht</label>
-        <textarea placeholder="Kurze Beschreibung Ihres Projekts oder Anliegens…"></textarea>
+        <textarea name="message" placeholder="Kurze Beschreibung Ihres Projekts oder Anliegens…" required></textarea>
       </div>
       <div style="display:flex;justify-content:center;margin-top:0.5rem">
         <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.9rem;">
